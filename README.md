@@ -31,10 +31,25 @@
 - zdefiniowanie listydo przechowywania wszystkich opinii o danym produkcie
 - dodanie pętli, która wykonuje operację ekstracji dla wszystkich opinii pobranych z pojedynczej strony
 -
-### Etap 3. Ekstrakcja wszystkich opinii o produkcie w wszystkich stron
+### Etap 3. Ekstrakcja wszystkich opinii o produkcie z wszystkich stron
 - dodanie pętli, która pobiera i analizuje kolejne strony z opiniami o produkcie
 - dodanie możliwości podania kodu produktu "z klawiatury"
 - dodanie zapisu wszystkich opinii o produkcie do pliku .json
 
 ### Etap 4. Refactoring
-- 
+- zdefiniowanie funkcji do ekstrakcji pojedynczego elementu opinii
+- przygotowanie słownika opisującego składowe opinii wraz z ich selektorami
+- tworzenie słownika reprezentującego pojedyncząopinię przy wykorzstaniu wyrażenia słownikowego (dictionary comprehension)
+
+### Etap 5
+- wyświetlenie listy produktów, dla których pobrane zostały opinie
+- wczytanie opinii o wskazanym produkcie do obiektu DataFrame
+- obliczenie podstawowych statystyk
+    * średnia ocena produktu
+    * liczba opinii o produkcie
+    * liczba opinii dla których podana została liczba zalet
+    * liczba opinii dla których podana została liczba wad
+
+### Etap 6 Rysowanie wykresów opartych o dane z pobranych opinii
+- wykres słupkowy/kolumnowy obrazujący częstość występowania opinii z poszczególnymi ocenami
+- wykres kołowy obrazujący udział poszczególnych rodzajów rekomendacji w zbiorze opinii
